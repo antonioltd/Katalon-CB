@@ -19,6 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+//change01
+
 WebUI.openBrowser(findTestData('Environment').getValue(GlobalVariable.environment, 1))
 
 CustomKeywords.'browserHelper.Users.Login'('CB', 'primary')
