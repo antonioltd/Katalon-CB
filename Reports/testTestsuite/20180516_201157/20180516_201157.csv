@@ -1,0 +1,67 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+testTestsuite,Chrome 66.0.3359.139,,2018-05-16 20:12:07,2018-05-16 20:12:59,51.772s,PASSED
+,,,,,,
+Test Cases/Verify all side menus  and links  are displayed correctly,Chrome 66.0.3359.139,,2018-05-16 20:12:08,2018-05-16 20:12:58,49.907s,PASSED
+Statement - user1 = CustomKeywords.browserHelper.Users.GetUser1(institution),Chrome 66.0.3359.139,,2018-05-16 20:12:10,2018-05-16 20:12:10,0.856s,PASSED
+Statement - password1 = CustomKeywords.browserHelper.Users.GetUser1Password(institution),Chrome 66.0.3359.139,,2018-05-16 20:12:10,2018-05-16 20:12:11,0.095s,PASSED
+Statement - user2 = CustomKeywords.browserHelper.Users.GetUser1(institution),Chrome 66.0.3359.139,,2018-05-16 20:12:11,2018-05-16 20:12:11,0.053s,PASSED
+Statement - password2 = CustomKeywords.browserHelper.Users.GetUser2Password(institution),Chrome 66.0.3359.139,,2018-05-16 20:12:11,2018-05-16 20:12:11,0.063s,PASSED
+openBrowser,Chrome 66.0.3359.139,,2018-05-16 20:12:11,2018-05-16 20:12:19,8.532s,PASSED
+waitForElementVisible,Chrome 66.0.3359.139,,2018-05-16 20:12:19,2018-05-16 20:12:19,0.201s,PASSED
+clearText,Chrome 66.0.3359.139,,2018-05-16 20:12:19,2018-05-16 20:12:19,0.100s,PASSED
+sendKeys,Chrome 66.0.3359.139,,2018-05-16 20:12:19,2018-05-16 20:12:20,0.387s,PASSED
+clearText,Chrome 66.0.3359.139,,2018-05-16 20:12:20,2018-05-16 20:12:20,0.112s,PASSED
+sendKeys,Chrome 66.0.3359.139,,2018-05-16 20:12:20,2018-05-16 20:12:20,0.167s,PASSED
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:20,2018-05-16 20:12:22,1.514s,PASSED
+verifyElementVisible,Chrome 66.0.3359.139,,2018-05-16 20:12:22,2018-05-16 20:12:22,0.115s,PASSED
+"Statement - code = CustomKeywords.browserHelper.TOTP.getCode(user1, password1)",Chrome 66.0.3359.139,,2018-05-16 20:12:22,2018-05-16 20:12:25,3.008s,PASSED
+maximizeWindow,Chrome 66.0.3359.139,,2018-05-16 20:12:25,2018-05-16 20:12:26,1.171s,PASSED
+waitForElementVisible,Chrome 66.0.3359.139,,2018-05-16 20:12:26,2018-05-16 20:12:26,0.078s,PASSED
+sendKeys,Chrome 66.0.3359.139,,2018-05-16 20:12:26,2018-05-16 20:12:26,0.168s,PASSED
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:26,2018-05-16 20:12:30,4.233s,PASSED
+browserHelper.Navigation.NavigateToTreasuryDashboard,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.004s,NOT_RUN
+browserHelper.Navigation.NavigateToActiveThrottlingPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.001s,NOT_RUN
+browserHelper.Navigation.Navigate4EyeCheckPermissionPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.001s,NOT_RUN
+browserHelper.Navigation.NavigateToCRMInstitutionsPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.001s,NOT_RUN
+browserHelper.Navigation.NavigateToCRMQueryPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.002s,NOT_RUN
+browserHelper.Navigation.NavigateToDeviceSoftwarePage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.002s,NOT_RUN
+browserHelper.Navigation.NavigateToInstitutionUsersPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.001s,NOT_RUN
+browserHelper.Navigation.NavigateToInstitutionAccountsPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.001s,NOT_RUN
+browserHelper.Navigation.NavigateToCertificateAndTokenPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.001s,NOT_RUN
+browserHelper.Navigation.NavigateToInstitutionNominatedBICPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.002s,NOT_RUN
+browserHelper.Navigation.NavigateToEarmarkingPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.002s,NOT_RUN
+browserHelper.Navigation.NavigateToWorkstreamsPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.000s,NOT_RUN
+browserHelper.Navigation.NavigateToWorkItemsPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.001s,NOT_RUN
+browserHelper.Navigation.NavigateToWorkstreamUsersPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.002s,NOT_RUN
+browserHelper.Navigation.NavigateToPendingApprovalsPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.001s,NOT_RUN
+browserHelper.Navigation.NavigateToActionedApprovalsPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.003s,NOT_RUN
+browserHelper.Navigation.NavigateToWorkstreamsDashboardPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.002s,NOT_RUN
+browserHelper.Navigation.NavigateToThrougputDashboardPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:30,0.002s,NOT_RUN
+browserHelper.Navigation.NavigateToOnboardingPage,Chrome 66.0.3359.139,,2018-05-16 20:12:30,2018-05-16 20:12:34,3.171s,PASSED
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:34,2018-05-16 20:12:34,0.001s,NOT_RUN
+browserHelper.Dropdown.SelectOption,Chrome 66.0.3359.139,,2018-05-16 20:12:34,2018-05-16 20:12:34,0.002s,NOT_RUN
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:34,2018-05-16 20:12:34,0.001s,NOT_RUN
+browserHelper.Dropdown.SelectOption,Chrome 66.0.3359.139,,2018-05-16 20:12:34,2018-05-16 20:12:34,0.001s,NOT_RUN
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:34,2018-05-16 20:12:34,0.001s,NOT_RUN
+browserHelper.Dropdown.SelectOption,Chrome 66.0.3359.139,,2018-05-16 20:12:34,2018-05-16 20:12:34,0.001s,NOT_RUN
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:34,2018-05-16 20:12:34,0.211s,PASSED
+browserHelper.Dropdown.SelectOption,Chrome 66.0.3359.139,,2018-05-16 20:12:34,2018-05-16 20:12:35,0.755s,PASSED
+setText,Chrome 66.0.3359.139,,2018-05-16 20:12:35,2018-05-16 20:12:35,0.404s,PASSED
+setText,Chrome 66.0.3359.139,,2018-05-16 20:12:35,2018-05-16 20:12:35,0.327s,PASSED
+browserHelper.Sortcode.SetIndividualSortCode,Chrome 66.0.3359.139,,2018-05-16 20:12:35,2018-05-16 20:12:36,0.463s,PASSED
+browserHelper.Sortcode.SetOrganisationSortCode,Chrome 66.0.3359.139,,2018-05-16 20:12:36,2018-05-16 20:12:36,0.444s,PASSED
+setText,Chrome 66.0.3359.139,,2018-05-16 20:12:36,2018-05-16 20:12:37,0.256s,PASSED
+setText,Chrome 66.0.3359.139,,2018-05-16 20:12:37,2018-05-16 20:12:37,0.417s,PASSED
+sendKeys,Chrome 66.0.3359.139,,2018-05-16 20:12:37,2018-05-16 20:12:38,0.560s,PASSED
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:38,2018-05-16 20:12:38,0.146s,PASSED
+browserHelper.Dropdown.SelectOption,Chrome 66.0.3359.139,,2018-05-16 20:12:38,2018-05-16 20:12:38,0.729s,PASSED
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:38,2018-05-16 20:12:39,0.146s,PASSED
+browserHelper.Upload.FileUpload,Chrome 66.0.3359.139,,2018-05-16 20:12:39,2018-05-16 20:12:43,4.035s,PASSED
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:43,2018-05-16 20:12:43,0.176s,PASSED
+browserHelper.Upload.FileUpload,Chrome 66.0.3359.139,,2018-05-16 20:12:43,2018-05-16 20:12:47,4.003s,PASSED
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:47,2018-05-16 20:12:47,0.113s,PASSED
+browserHelper.Upload.FileUpload,Chrome 66.0.3359.139,,2018-05-16 20:12:47,2018-05-16 20:12:51,4.005s,PASSED
+click,Chrome 66.0.3359.139,,2018-05-16 20:12:51,2018-05-16 20:12:51,0.114s,PASSED
+browserHelper.Upload.FileUpload,Chrome 66.0.3359.139,,2018-05-16 20:12:51,2018-05-16 20:12:55,4.005s,PASSED
+delay,Chrome 66.0.3359.139,,2018-05-16 20:12:55,2018-05-16 20:12:58,3.027s,PASSED
+browserHelper.Button.ClickOnNextButton,Chrome 66.0.3359.139,,2018-05-16 20:12:58,2018-05-16 20:12:58,0.213s,PASSED

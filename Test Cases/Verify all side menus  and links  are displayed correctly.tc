@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify all side menus  and links  are displayed correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>defee6e8-3e06-4f61-8915-18e110867b4a</testCaseGuid>
+   <variable>
+      <defaultValue>'CB'</defaultValue>
+      <description></description>
+      <id>11ed88d3-5d40-4c3e-9d58-74e2db81a4b3</id>
+      <masked>false</masked>
+      <name>institution</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bc8b3a42-de32-4e21-a185-097f32507155</id>
+      <masked>false</masked>
+      <name>user1</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>43e8e3a4-3482-4769-9fc7-d0c271a0a227</id>
+      <masked>false</masked>
+      <name>user2</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>43043440-ae6f-4218-b4fd-66ad0c15d68d</id>
+      <masked>false</masked>
+      <name>password1</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9d7e7d51-c2dd-4d02-a894-b1c3c063c730</id>
+      <masked>false</masked>
+      <name>password2</name>
+   </variable>
+</TestCaseEntity>

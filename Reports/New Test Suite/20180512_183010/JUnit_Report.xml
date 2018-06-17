@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="New Test Suite" time="52" tests="0" failures="1" errors="0">
+   <testsuite name="New Test Suite" tests="0" failures="1" errors="0" time="52" timestamp="2018-05-12 18:30:32" hostname="customer - DESKTOP-563VRSA" id="Test Suites/New Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\customer\\Katalon Studio\\Sample\\Reports\\New Test Suite\\20180512_183010"/>
+         <property name="logFiles" value="C:\\Users\\customer\\Katalon Studio\\Sample\\Reports\\New Test Suite\\20180512_183010\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="customer - DESKTOP-563VRSA"/>
+         <property name="hostAddress" value="192.168.0.50"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+      </properties>
+      <testcase name="Test Cases/Verify all side menus  and links  are displayed correctly" classname="Test Cases/Verify all side menus  and links  are displayed correctly" status="FAILED">
+         <failure type="FAILED" message="Unable to open browser with url: 'https://institution-qa.clearbank.co.uk/' (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.69 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)"/>
+         <system-out><![CDATA[2018-05-12 18:30:35 - [TEST_CASE][FAILED] - Test Cases/Verify all side menus  and links  are displayed correctly: Test Cases/Verify all side menus  and links  are displayed correctly FAILED because (of) Unable to open browser with url: 'https://institution-qa.clearbank.co.uk/' (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.69 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)
+
+2018-05-12 18:30:41 - [TEST_STEP][PASSED] - Statement - user1 = CustomKeywords.browserHelper.Users.GetUser1(institution): browserHelper.Users.GetUser1 is PASSED
+
+2018-05-12 18:30:44 - [MESSAGE][PASSED] - browserHelper.Users.GetUser1 is PASSED
+
+2018-05-12 18:30:44 - [TEST_STEP][PASSED] - Statement - password1 = CustomKeywords.browserHelper.Users.GetUser1Password(institution): browserHelper.Users.GetUser1Password is PASSED
+
+2018-05-12 18:30:45 - [MESSAGE][PASSED] - browserHelper.Users.GetUser1Password is PASSED
+
+2018-05-12 18:30:45 - [TEST_STEP][PASSED] - Statement - user2 = CustomKeywords.browserHelper.Users.GetUser1(institution): browserHelper.Users.GetUser1 is PASSED
+
+2018-05-12 18:30:45 - [MESSAGE][PASSED] - browserHelper.Users.GetUser1 is PASSED
+
+2018-05-12 18:30:45 - [TEST_STEP][PASSED] - Statement - password2 = CustomKeywords.browserHelper.Users.GetUser2Password(institution): browserHelper.Users.GetUser2Password is PASSED
+
+2018-05-12 18:30:45 - [MESSAGE][PASSED] - browserHelper.Users.GetUser2Password is PASSED
+
+2018-05-12 18:30:45 - [TEST_STEP][FAILED] - openBrowser: Unable to open browser with url: 'https://institution-qa.clearbank.co.uk/' (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.69 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)
+
+2018-05-12 18:31:24 - [MESSAGE][FAILED] - Unable to open browser with url: 'https://institution-qa.clearbank.co.uk/' (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.69 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)]]></system-out>
+         <system-err><![CDATA[2018-05-12 18:30:35 - [TEST_CASE][FAILED] - Test Cases/Verify all side menus  and links  are displayed correctly: Test Cases/Verify all side menus  and links  are displayed correctly FAILED because (of) Unable to open browser with url: 'https://institution-qa.clearbank.co.uk/' (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.69 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-05-12 18:30:32 - [TEST_SUITE][FAILED] - New Test Suite: Test Cases/Verify all side menus  and links  are displayed correctly FAILED because (of) Unable to open browser with url: 'https://institution-qa.clearbank.co.uk/' (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.69 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)]]></system-out>
+      <system-err><![CDATA[2018-05-12 18:30:32 - [TEST_SUITE][FAILED] - New Test Suite: Test Cases/Verify all side menus  and links  are displayed correctly FAILED because (of) Unable to open browser with url: 'https://institution-qa.clearbank.co.uk/' (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.69 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+New Test Suite,Chrome 66.0.3359.139,,2018-05-12 18:32:50,2018-05-12 18:33:45,55.522s,FAILED
+,,,,,,
+Test Cases/Verify all side menus  and links  are displayed correctly,Chrome 66.0.3359.139,,2018-05-12 18:32:54,2018-05-12 18:33:43,49.041s,FAILED
+Statement - user1 = CustomKeywords.browserHelper.Users.GetUser1(institution),Chrome 66.0.3359.139,,2018-05-12 18:32:59,2018-05-12 18:33:02,3.249s,PASSED
+Statement - password1 = CustomKeywords.browserHelper.Users.GetUser1Password(institution),Chrome 66.0.3359.139,,2018-05-12 18:33:02,2018-05-12 18:33:03,0.182s,PASSED
+Statement - user2 = CustomKeywords.browserHelper.Users.GetUser1(institution),Chrome 66.0.3359.139,,2018-05-12 18:33:03,2018-05-12 18:33:03,0.154s,PASSED
+Statement - password2 = CustomKeywords.browserHelper.Users.GetUser2Password(institution),Chrome 66.0.3359.139,,2018-05-12 18:33:03,2018-05-12 18:33:03,0.224s,PASSED
+openBrowser,Chrome 66.0.3359.139,,2018-05-12 18:33:03,2018-05-12 18:33:41,37.749s,PASSED
+waitForElementVisible,Chrome 66.0.3359.139,,2018-05-12 18:33:41,2018-05-12 18:33:41,0.618s,PASSED
+clearText,Chrome 66.0.3359.139,,2018-05-12 18:33:41,2018-05-12 18:33:42,0.295s,PASSED
+sendKeys,Chrome 66.0.3359.139,,2018-05-12 18:33:42,2018-05-12 18:33:43,1.218s,PASSED
+clearText,Chrome 66.0.3359.139,,2018-05-12 18:33:43,2018-05-12 18:33:43,0.241s,FAILED

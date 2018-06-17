@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>this includes single and multiple payment entries</description>
+   <name>Verify user can send FPS payments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>52b318f3-6b7b-4bee-9f0e-e87c6fb21c42</testCaseGuid>
+   <variable>
+      <defaultValue>'495eba7c-c071-4c9e-86ea-b51376c40e98'</defaultValue>
+      <description></description>
+      <id>0fa4d7e8-fc53-402c-9b7d-d8e4f0571101</id>
+      <masked>false</masked>
+      <name>accountId</name>
+   </variable>
+</TestCaseEntity>
