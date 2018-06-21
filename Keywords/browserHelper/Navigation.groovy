@@ -48,6 +48,8 @@ class Navigation {
 	@Keyword
 	public void SelectSideMenu(String sideMenu){
 
+		WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/loading_Mask'), 5);
+
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='"+ sideMenu +"']")))
 		element.click()
 	}
@@ -58,9 +60,8 @@ class Navigation {
 		//return sideMenu
 
 		//click on side menu specified in the parameter
+		WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/loading_Mask'), 5);
 
-		WebDriver driver = DriverFactory.getWebDriver()
-		WebDriverWait wait = new WebDriverWait(driver, 10)
 
 		//		obj.addProperty("xpath",ConditionType.EQUALS,"//a[contains(text(),'" + sideLink + "')]")
 
@@ -76,6 +77,8 @@ class Navigation {
 
 	@Keyword
 	public void NavigateToTreasuryDashboard(){
+
+
 
 		SelectSideMenu("Treasury")
 
@@ -284,6 +287,8 @@ class Navigation {
 
 		SelectSideLink("Approvals")
 
+		WebUI.waitForElementNotPresent(findTestObject('Object Repository/QA/loading_Mask'), 5)
+
 		WebUI.waitForElementVisible(findTestObject('Object Repository/QA/Page_Approvals/tab_Pending'), 5)
 		WebUI.waitForElementClickable(findTestObject('Object Repository/QA/Page_Approvals/tab_Pending'), 5)
 		WebUI.click(findTestObject('Object Repository/QA/Page_Approvals/tab_Pending'))
@@ -317,8 +322,8 @@ class Navigation {
 
 		WebUI.navigateToUrl("https://institution-" + GlobalVariable.environment + ".clearbank.co.uk/#/institution/users/create-user")
 	}
-	
-	
+
+
 
 }
 

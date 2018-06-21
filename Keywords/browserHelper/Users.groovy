@@ -26,6 +26,9 @@ class Users {
 
 	TestData environmentData = findTestData('Data Files/Environment')
 	TestData usersData;
+	
+	
+	
 
 	@Keyword
 	public String GetUrl(){
@@ -105,16 +108,17 @@ class Users {
 				break;
 
 		}
+
 		try {
 			WebUI.verifyElementNotPresent(findTestObject('Object Repository/QA/Page_Landing/link_UseAnotherAccount'), 5)
-		} catch (Exception e) {
-			WebUI.click(findTestObject('Object Repository/QA/Page_Landing/link_UseAnotherAccount'))
+
 		}
 
+		catch (Exception e)
 
-
-
-
+		{
+			WebUI.click(findTestObject('Object Repository/QA/Page_Landing/link_UseAnotherAccount'))
+		}
 
 		WebUI.waitForElementVisible(findTestObject('QA/Page_Login/input_Username'), 5)
 
@@ -132,7 +136,7 @@ class Users {
 
 		//String code = CustomKeywords.'browserHelper.TOTP.getCode'(findTestData(GlobalVariable.environment).getValue('User1', 1), findTestData(GlobalVariable.environment).getValue('Password1',1))
 
-		def code =getCode(GetUser1(inst), GetUser1Password(inst))
+		def code =getCode(username, password)
 
 		WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
 
@@ -162,24 +166,8 @@ class Users {
 		reqObj.setRestParameters(params);
 
 		def response = WS.sendRequest(reqObj);
-		
-			def fullText = Jsoup.parse(response.getResponseText()).toString()
-			//def ele = fullText.getElementsByClass("text-center col-md-4 col-md-offset-4 alert-success")
-			String[] str = fullText.split("^/d{8}")
-			//String str1 = fullText.replaceAll("^/d{8}", "")
-			
-			System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-			System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-			System.out.print(str)
-			System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-			System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-			//def ele = fullText.getElementsContainingText("TOTP Code:")
-			//def str = ele.get(1).text()
-//			def elem = fullText.childNodes.get(1)
-//			def element = elem.getDeepChild(getElementsContainingText("TOTP Code:"))
-//			
-//			
 
+		//def fullText = Jsoup.parse(response.getResponseText()).toString()
 
 		XmlPath xmlPath = new XmlPath(CompatibilityMode.HTML, response.getResponseText());
 

@@ -20,7 +20,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //change01
-
 WebUI.openBrowser(findTestData('Environment').getValue(GlobalVariable.environment, 1))
 
 CustomKeywords.'browserHelper.Users.Login'('CB', 'primary')
@@ -53,19 +52,22 @@ WebUI.setText(findTestObject('Object Repository/QA/3. Page_Admin/Onboarding/1.Pa
 CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('Object Repository/QA/3. Page_Admin/Onboarding/1.Page_Institution Details/dropdown_ClearingSystemIdentificationType'), 
     'Swiss BC Code')
 
-WebUI.scrollToElement(findTestObject('QA/3. Page_Admin/Onboarding/1.Page_Institution Details/button_Logo_2_1_File'), 2)
+WebUI.scrollToElement(findTestObject('QA/3. Page_Admin/Onboarding/1.Page_Institution Details/button_Logo_1_1_MobileFile'), 
+    2)
+
+WebUI.delay(1)
 
 CustomKeywords.'browserHelper.Upload._upload'(findTestObject('Object Repository/QA/3. Page_Admin/Onboarding/1.Page_Institution Details/button_Logo_1_1_MobileFile'), 
-    'C:\\Users\\customer\\Katalon Studio\\Sample\\Files\\Logo\\clearbank-2to1.png')
+    'C:\\Users\\TimmyAntonio\\Desktop\\QA Environment\\QA\\AutomationFramework.Main\\AutomationFramework\\Resources\\Logo\\clearbank-2to1.png')
 
 CustomKeywords.'browserHelper.Upload._upload'(findTestObject('Object Repository/QA/3. Page_Admin/Onboarding/1.Page_Institution Details/button_Logo_1_1_File'), 
-    'C:\\Users\\customer\\Katalon Studio\\Sample\\Files\\Logo\\clearbank-2to1.png')
+    'C:\\Users\\TimmyAntonio\\Desktop\\QA Environment\\QA\\AutomationFramework.Main\\AutomationFramework\\Resources\\Logo\\clearbank-2to1.png')
 
 CustomKeywords.'browserHelper.Upload._upload'(findTestObject('Object Repository/QA/3. Page_Admin/Onboarding/1.Page_Institution Details/button_Logo_2_1_File'), 
-    'C:\\Users\\customer\\Katalon Studio\\Sample\\Files\\Logo\\clearbank-2to1.png')
+    'C:\\Users\\TimmyAntonio\\Desktop\\QA Environment\\QA\\AutomationFramework.Main\\AutomationFramework\\Resources\\Logo\\clearbank-2to1.png')
 
 CustomKeywords.'browserHelper.Upload._upload'(findTestObject('Object Repository/QA/3. Page_Admin/Onboarding/1.Page_Institution Details/button_Logo_2_1_MobileFile '), 
-    'C:\\Users\\customer\\Katalon Studio\\Sample\\Files\\Logo\\clearbank-2to1.png')
+    'C:\\Users\\TimmyAntonio\\Desktop\\QA Environment\\QA\\AutomationFramework.Main\\AutomationFramework\\Resources\\Logo\\clearbank-2to1.png')
 
 CustomKeywords.'browserHelper.Button.ClickOnNextButton'()
 

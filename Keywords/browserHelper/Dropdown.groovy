@@ -47,20 +47,24 @@ public class Dropdown {
 	@Keyword
 	public void DropdownHelper(TestObject dropdownObject, String itemToSelect){
 
+		WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/dropdown_Card'), 3)
 		WebUI.waitForElementVisible(dropdownObject, 5)
 		WebUI.waitForElementClickable(dropdownObject, 5)
+
+
+		WebUI.delay(1)
+
 		WebUI.click(dropdownObject)
 		WebUI.delay(1)
 		WebElement itemElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='" + itemToSelect + "']")))
 		itemElement.click()
-		
+
 		WebElement element = null
 		try {
 			if (driver.findElements(By.xpath("//span[text()='" + itemToSelect + "']/ancestor::div[@class='el-select-dropdown is-multiple']")).size() > 0) {
 				WebUI.click(dropdownObject)
-				}
-					
-			} catch (Exception e) { }
+			}
+		} catch (Exception e) { }
 	}
 
 	@Keyword

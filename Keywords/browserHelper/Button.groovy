@@ -38,20 +38,53 @@ public class Button {
 	WebDriverWait wait = new WebDriverWait(driver, 15)
 
 	@Keyword
-	public void ClickOnNextButton(){
-
-		List<WebElement> matches = driver.findElements(By.xpath("//span[normalize-space()='Next']"))
-
-
-		for(WebElement ele in  matches){
-
-			if (ele.displayed) {
-				ele.click()
-				break;
-			}
+		public void ClickOnNextButton(){
+	
+				ClickOnDisplayedButton("Next")
+		}
+	
+		@Keyword
+		public void ClickOnNextPageButton(){
+	
+	
+				ClickOnDisplayedButton("Next Page")
+		}
+	
+		@Keyword
+		public void ClickOnPreviousPageButton(){
+	
+	
+			ClickOnDisplayedButton("Previous Page")
+		}
+		
+		@Keyword
+		public void ClickOnResetButton(){
+	
+	
+			ClickOnDisplayedButton("Reset")
+			
+		}
+		
+		@Keyword
+		public void ClickOnCreateRuleButton(){
+	
+	
+			ClickOnDisplayedButton("Create Rule")
+		}
+			
+		private void ClickOnDisplayedButton(String buttonName){
+		
+		List<WebElement> matches = driver.findElements(By.xpath("//span[normalize-space()='" + buttonName + "']"))
+		
+		
+				for(WebElement ele in  matches){
+		
+					if (ele.displayed) {
+						ele.click()
+						break;
+					}
+				}
+	
 		}
 
-		//		WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Next']")))
-		//		button.click()
 	}
-}

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_TelephoneNumber</name>
+   <name>loading_Mask</name>
    <tag></tag>
-   <elementGuidId>9383e93b-f1b2-4980-95c3-8267460425a6</elementGuidId>
+   <elementGuidId>67e05e5d-1d67-42d6-8c12-bb53768d0864</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[text()='Telephone Number']/following-sibling::div//input</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[text()='Telephone Number']/following-sibling::div//input</value>
+      <value>//div[contains(@class,'el-loading-mask')]</value>
    </webElementProperties>
 </WebElementEntity>

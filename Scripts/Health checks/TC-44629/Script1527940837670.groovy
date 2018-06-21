@@ -21,78 +21,100 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(findTestData('Environment').getValue(GlobalVariable.environment, 1))
 
-CustomKeywords.'browserHelper.Users.Login'('Auto FPS', 'primary')
+//CustomKeywords.'browserHelper.Users.Login'('Auto FPS', 'primary')
+CustomKeywords.'browserHelper.Users.Login'('Create User', 'primary')
 
-not_run: CustomKeywords.'browserHelper.Navigation.NavigateToCreateUserPage'()
+CustomKeywords.'browserHelper.Navigation.NavigateToCreateUserPage'()
 
-not_run: CustomKeywords.'browserHelper.Navigation.NavigateToInstitutionUsersPage'()
+CustomKeywords.'browserHelper.Navigation.NavigateToInstitutionUsersPage'()
 
-not_run: WebUI.waitForElementVisible(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser'), 
-    5)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser'), 5)
+CustomKeywords.'browserHelper.Generic.WaitUntilLoadingComplete'()
 
-not_run: WebUI.click(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser'), 5)
 
-not_run: TestData createUserData = findTestData('Data Files/Test Data/Create User')
+WebUI.click(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser'))
 
-not_run: int size = createUserData.getRowNumbers()
+TestData createUserData = findTestData('Data Files/Test Data/Create User')
 
-not_run: for (int i = 1; i <= createUserData.getRowNumbers(); i++) {
-    //    WebUI.refresh()
-    //
-    //    WebUI.waitForElementVisible(findTestObject('QA/5. Page_Institution/Page_Users/radio_NewContact'), 5)
-    //
-    //    WebUI.click(findTestObject('QA/5. Page_Institution/Page_Users/radio_NewContact'))
-    //
-    //    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/dropdown_Title'), 
-    //        createUserData.getValue('Title', i))
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_FirstName'), 
-    //        createUserData.getValue('First Name', i))
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_Surname'), 
-    //        createUserData.getValue('Surname', i))
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/4.Page_Contact Details/input_EmailAddress'), createUserData.getValue(
-    //            'Email Address', i))
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/calendar_DateOfBirth'), 
-    //        createUserData.getValue('Date of Birth', i))
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_TelephoneNumber'), 
-    //        '0789654123')
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_JobTitle'), 
-    //        'Tester')
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_Profession'), 
-    //        'Manager')
-    //
-    //    CustomKeywords.'browserHelper.Dropdown.AutoSuggestHelper'(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/autosuggest_Language'), 
-    //        'English')
-    //
-    //    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/dropdown_ResidentialStatus'), 
-    //        'Resident')
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/2.Page_User Identity Numbers/input_NationalInsuranceNumber'), 
-    //        'dfg15')
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/input_BuildingNumber'), '123')
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/input_StreetName'), 'street')
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/input_City'), 'London')
-    //
-    //    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/input_PostalCode'), 'rt674lj')
-    //
-    //    CustomKeywords.'browserHelper.Dropdown.AutoSuggestHelper'(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/autosuggest_CountryName'), 
-    //        'United Kingdom')
-    //
-    //    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/dropdown_Approval'), 
-    //        'View All Approvals')
-    //
-    //    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/dropdown_Approval'), 
-    //        'View Pending Approvals')
-    //
+int size = createUserData.getRowNumbers()
+
+String first_name
+
+String surname
+
+String email_address
+
+for (int i = 1; i <= createUserData.getRowNumbers(); i++) {
+    WebUI.refresh()
+
+    WebUI.waitForElementVisible(findTestObject('QA/5. Page_Institution/Page_Users/radio_NewContact'), 5)
+
+    WebUI.click(findTestObject('QA/5. Page_Institution/Page_Users/radio_NewContact'))
+
+    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/dropdown_Title'), 
+        createUserData.getValue('Title', i))
+
+    CustomKeywords.'browserHelper.Button.ClickOnCreateRuleButton'()
+
+    first_name = createUserData.getValue('First Name', i)
+
+    first_name = first_name.equals('random') ? CustomKeywords.'browserHelper.Generic.GetRandomString'(5) : first_name
+
+    surname = createUserData.getValue('Surname', i)
+
+    surname = surname.equals('random') ? CustomKeywords.'browserHelper.Generic.GetRandomString'(5) : surname
+
+    email_address = createUserData.getValue('Email Address', i)
+
+    email_address = email_address.equals('random') ? CustomKeywords.'browserHelper.Generic.GetTempEmail'() : email_address
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_FirstName'), 
+        first_name)
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_Surname'), 
+        surname)
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/4.Page_Contact Details/input_EmailAddress'), email_address)
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/calendar_DateOfBirth'), 
+        createUserData.getValue('Date of Birth', i))
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_TelephoneNumber'), 
+        '0789654123')
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_JobTitle'), 
+        'Tester')
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/input_Profession'), 
+        'Manager')
+
+    CustomKeywords.'browserHelper.Dropdown.AutoSuggestHelper'(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/autosuggest_Language'), 
+        'English')
+
+    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/1.Page_Basic User Details/dropdown_ResidentialStatus'), 
+        'Resident')
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/Page_Primary Contact Details/2.Page_User Identity Numbers/input_NationalInsuranceNumber'), 
+        'dfg15')
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/input_BuildingNumber'), '123')
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/input_StreetName'), 'street')
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/input_City'), 'London')
+
+    WebUI.setText(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/input_PostalCode'), 'rt674lj')
+
+    CustomKeywords.'browserHelper.Dropdown.AutoSuggestHelper'(findTestObject('QA/3. Page_Admin/Onboarding/7.Page_OrganisationAddress/autosuggest_CountryName'), 
+        'United Kingdom')
+
+    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/dropdown_Approval'), 
+        'View All Approvals')
+
+    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/dropdown_Approval'), 
+        'View Pending Approvals')
+
     //    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/dropdown_Approval'), 
     //        'Respond To Pending Approval')
     //
@@ -101,13 +123,38 @@ not_run: for (int i = 1; i <= createUserData.getRowNumbers(); i++) {
     //
     //    CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/dropdown_Approval'), 
     //        'Get Detailed Approval')
-    //
-    //    WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/input_Password'), 'Password123')
+    WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/input_Password'), 'Password123')
+
+    WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/input_ConfirmPassword'), 'Password123')
 }
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('QA/Page_Landing/link_SignOut'))
+WebUI.scrollToElement(findTestObject('QA/5. Page_Institution/Page_Users/button_Create'), 5)
 
-not_run: CustomKeywords.'browserHelper.Users.Login'('Auto FPS', 'secondary')
+WebUI.click(findTestObject('QA/5. Page_Institution/Page_Users/button_Create'))
+
+WebUI.waitForElementVisible(findTestObject('QA/popup_Message'), 20)
+
+WebUI.verifyElementText(findTestObject('QA/popup_Message'), 'Success')
+
+WebUI.click(findTestObject('QA/Page_Landing/link_SignOut'))
+
+CustomKeywords.'browserHelper.Users.Login'('Create User', 'secondary')
+
+CustomKeywords.'browserHelper.Navigation.NavigateToPendingApprovalsPage'()
+
+CustomKeywords.'browserHelper.Approval.ApproveCreateUserRequest'(first_name, surname, email_address)
+
+WebUI.waitForElementVisible(findTestObject('QA/popup_Message'), 20)
+
+WebUI.verifyElementText(findTestObject('Object Repository/QA/popup_Message'), 'Success')
+
+WebUI.navigateToUrl('https://institution-qa.clearbank.co.uk/#/institution/users')
+
+WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/loading_Mask'), 5)
+
+WebUI.refresh()
+
+WebUI.verifyEqual(CustomKeywords.'browserHelper.Generic.VerifyUserExist'(first_name, surname), true)
 

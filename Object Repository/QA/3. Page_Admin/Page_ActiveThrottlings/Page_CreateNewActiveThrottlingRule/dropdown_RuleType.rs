@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_TelephoneNumber</name>
+   <name>dropdown_RuleType</name>
    <tag></tag>
-   <elementGuidId>9383e93b-f1b2-4980-95c3-8267460425a6</elementGuidId>
+   <elementGuidId>5d0fadc0-2eeb-4f65-8bba-bfe3ce09db78</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[text()='Telephone Number']/following-sibling::div//input</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[text()='Telephone Number']/following-sibling::div//input</value>
+      <value>//label[contains(text(),'Rule Type')]/following-sibling::div//input</value>
    </webElementProperties>
 </WebElementEntity>

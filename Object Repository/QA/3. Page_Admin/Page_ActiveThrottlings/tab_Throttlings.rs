@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_TelephoneNumber</name>
+   <name>tab_Throttlings</name>
    <tag></tag>
-   <elementGuidId>9383e93b-f1b2-4980-95c3-8267460425a6</elementGuidId>
+   <elementGuidId>64c850b4-6d29-4cc7-8d60-d4ca4c85cb58</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[text()='Telephone Number']/following-sibling::div//input</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[text()='Telephone Number']/following-sibling::div//input</value>
+      <value>//div[@class='el-tabs__nav']/div[1]</value>
    </webElementProperties>
 </WebElementEntity>
