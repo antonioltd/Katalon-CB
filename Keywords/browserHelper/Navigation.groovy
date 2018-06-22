@@ -52,6 +52,8 @@ class Navigation {
 
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='"+ sideMenu +"']")))
 		element.click()
+		
+		
 	}
 
 

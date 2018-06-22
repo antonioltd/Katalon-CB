@@ -158,3 +158,5 @@ WebUI.refresh()
 
 WebUI.verifyEqual(CustomKeywords.'browserHelper.Generic.VerifyUserExist'(first_name, surname), true)
 
+WebUI.closeBrowser()
+

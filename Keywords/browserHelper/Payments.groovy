@@ -111,12 +111,10 @@ public class Payments {
 	public void PreviousPaymentTemplateAction(String action){
 		//		WebElement discardElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Discard']/parent::button")))
 		//		discardElement.click()
-		
+
 		By locator = By.xpath("//span[text()='" +  action + "']/parent::button");
 		WebElement element = driver.findElement(locator)
 		element.click()
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator))
 	}
-		
-	
 }
