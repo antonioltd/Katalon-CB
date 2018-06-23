@@ -23,6 +23,7 @@ import com.kms.katalon.core.testdata.TestDataFactory
 import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
@@ -53,6 +54,30 @@ public class Payments {
 
 		return sortcode.substring(4,6)
 	}
+	
+	@Keyword
+	public void SetCreditorSortCode(int row, String sortcode){
+
+		WebElement SCLeft=null;
+		WebElement SCMiddle =null;
+		WebElement SCRight = null;
+		
+		
+		if (driver.findElement(By.xpath("//form[@class='el-form u-space--m']")).displayed) {
+			
+			SCLeft = driver.findElement(By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() +"]//div[@class='sort-code']/div[1]//input"));
+			SCMiddle = driver.findElement(By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() +"]//div//div[@class='sort-code']/div[2]//input"));
+			SCRight = driver.findElement(By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() +"]//div[@class='sort-code']/div[3]//input"));
+		}
+		
+		
+		SCLeft.sendKeys(GetLeftValues(sortcode))
+		
+		SCMiddle.sendKeys(GetMiddleValues(sortcode))
+		
+		SCRight.sendKeys(GetRightValues(sortcode))
+	}
+
 
 	@Keyword
 	public void SetIndividualSortCode(String sortcode){
@@ -80,31 +105,68 @@ public class Payments {
 		SCRight.sendKeys(GetRightValues(sortcode))
 	}
 
-	@Keyword
-	public void SetSortCode(String sortcode){
 
-		WebElement SCLeft = driver.findElement(By.xpath("//div[@class='sort-code']/div[1]//input"));
-		SCLeft.sendKeys(GetLeftValues(sortcode))
-
-		WebElement SCMiddle = driver.findElement(By.xpath("//div//div[@class='sort-code']/div[2]//input"));
-		SCMiddle.sendKeys(GetMiddleValues(sortcode))
-
-		WebElement SCRight = driver.findElement(By.xpath("//div[@class='sort-code']/div[3]//input"));
-		SCRight.sendKeys(GetRightValues(sortcode))
-	}
 
 	@Keyword
-	public void EnterPayment(String accountHolderName = "Holder", String sortcode="200318", String accountNumber="10000001", String amount = "5.00", String reference="Payment Reference"){
+	public void EnterPayment(int row = 1, String accountHolderName = "Holder", String sortcode="200318", String accountNumber="10000001", String amount = "5.00", String reference="Payment Reference"){
 
-		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountHolderName'), accountHolderName)
-
-		SetSortCode(sortcode)
-
-		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountNumber'), accountNumber)
-
-		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Amount'), amount)
-
-		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Reference'), reference)
+		
+		
+		if (row > 1) {
+			
+			WebUI.click(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor'))
+		}
+		
+		
+		if (row%10 == 1 ) {
+			
+			WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser'), 10)
+		}
+		
+		if (row > 10) {
+			
+			row = row%10
+			
+			if (row == 0) {
+				
+				row = 10;
+			}
+		}
+		
+		//Account Holder Name
+		By accountHolderTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Account Holder Name']");
+		WebElement accountHolderTextboxElement = driver.findElement(accountHolderTextbox)
+		accountHolderTextboxElement.sendKeys(accountHolderName)
+		
+		//Sort Code
+		SetCreditorSortCode(row, sortcode)
+		
+		//Account Number
+		By accountNumberTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Account Number']");
+		WebElement accountNumberTextboxElement = driver.findElement(accountNumberTextbox)
+		accountNumberTextboxElement.sendKeys(accountNumber)
+		
+		//Amount
+		By amountTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Amount']");
+		WebElement amountTextboxElement = driver.findElement(amountTextbox)
+		amountTextboxElement.sendKeys(amount)
+		
+		//Reference
+		By referenceTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Reference']");
+		WebElement referenceTextboxElement = driver.findElement(referenceTextbox)
+		referenceTextboxElement.sendKeys(reference)
+		
+		
+		
+//		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountHolderName'), accountHolderName)
+//
+//		
+//
+//		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountNumber'), accountNumber)
+//
+//		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Amount'), amount)
+//
+//		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Reference'), reference)
 	}
 
 	@Keyword

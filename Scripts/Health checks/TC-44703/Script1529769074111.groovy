@@ -30,6 +30,19 @@ WebUI.waitForElementVisible(findTestObject('QA/5. Page_Institution/Accounts/butt
 
 WebUI.click(findTestObject('QA/5. Page_Institution/Accounts/button_SendPayments'))
 
+WebUI.delay(2)
+
+
+	try {
+		
+		CustomKeywords.'browserHelper.Payments.PreviousPaymentTemplateAction'('Discard')
+		
+	} catch (Exception e) {
+	
+		println (e.message)
+	}
+
+
 WebUI.waitForElementNotVisible(findTestObject('QA/loading_Mask'), 10)
 
 CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/5. Page_Institution/Accounts/dropdown_PaymentMethod'), 
@@ -37,15 +50,27 @@ CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/5. Pag
 
 CustomKeywords.'browserHelper.Date.SetDate'()
 
-WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountHolderName'), 'holder01')
+CustomKeywords.'browserHelper.Payments.EnterPayment'(1, 'Holder01', '200318', '24681012', '2', 'ref1')
 
-CustomKeywords.'browserHelper.Payments.SetSortCode'('200318')
+CustomKeywords.'browserHelper.Payments.EnterPayment'(2, 'Holder02', '200318', '24681013', '3', 'ref2')
 
-WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountNumber'), '12345679')
+CustomKeywords.'browserHelper.Payments.EnterPayment'(3, 'Holder01', '200318', '24681012', '2', 'ref1')
 
-WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Amount'), '20')
+CustomKeywords.'browserHelper.Payments.EnterPayment'(4, 'Holder02', '200318', '24681013', '3', 'ref2')
 
-WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Reference'), 'testreference')
+CustomKeywords.'browserHelper.Payments.EnterPayment'(5, 'Holder01', '200318', '24681012', '2', 'ref1')
+
+CustomKeywords.'browserHelper.Payments.EnterPayment'(6, 'Holder02', '200318', '24681013', '3', 'ref2')
+
+CustomKeywords.'browserHelper.Payments.EnterPayment'(7, 'Holder01', '200318', '24681012', '2', 'ref1')
+
+CustomKeywords.'browserHelper.Payments.EnterPayment'(8, 'Holder02', '200318', '24681013', '3', 'ref2')
+
+CustomKeywords.'browserHelper.Payments.EnterPayment'(9, 'Holder01', '200318', '24681012', '2', 'ref1')
+
+CustomKeywords.'browserHelper.Payments.EnterPayment'(10, 'Holder02', '200318', '24681013', '3', 'ref2')
+
+CustomKeywords.'browserHelper.Payments.EnterPayment'(11, 'Holder01', '200318', '24681012', '2', 'ref1')
 
 WebUI.click(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/button_ConfirmCreditors'))
 
