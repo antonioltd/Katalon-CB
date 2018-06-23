@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="payment01" time="76" tests="0" failures="0" errors="1">
+   <testsuite name="payment01" tests="0" failures="0" errors="1" time="76" timestamp="2018-06-23 17:12:04" hostname="customer - DESKTOP-563VRSA" id="Test Suites/payment01">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\customer\\git\\Katalon-CB\\Reports\\payment01\\20180623_171143"/>
+         <property name="logFiles" value="C:\\Users\\customer\\git\\Katalon-CB\\Reports\\payment01\\20180623_171143\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="customer - DESKTOP-563VRSA"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+         <property name="browser" value="Chrome 67.0.3396.87"/>
+         <property name="hostAddress" value="192.168.0.50"/>
+         <property name="sessionId" value="5781521de3be0cb297cd62b34736383c"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Health checks/TC-44702" classname="Test Cases/Health checks/TC-44702" status="ERROR">
+         <error type="ERROR" message="Test Cases/Health checks/TC-44702 FAILED because (of) org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\customer\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 5781521de3be0cb297cd62b34736383c"/>
+         <system-out><![CDATA[2018-06-23 17:12:06 - [TEST_CASE][ERROR] - Test Cases/Health checks/TC-44702: Test Cases/Health checks/TC-44702 FAILED because (of) org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\customer\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 5781521de3be0cb297cd62b34736383c
+
+2018-06-23 17:12:07 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://institution-qa.clearbank.co.uk/'
+
+2018-06-23 17:12:22 - [MESSAGE][PASSED] - Browser is opened with url: 'https://institution-qa.clearbank.co.uk/'
+
+2018-06-23 17:12:22 - [TEST_STEP][PASSED] - browserHelper.Users.Login: browserHelper.Users.Login is PASSED
+
+2018-06-23 17:12:22 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/QA/Page_Landing/link_UseAnotherAccount' located by 'By.xpath: //*[@id = 'use_another_account']' is not present after '5' second(s)
+
+2018-06-23 17:12:23 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/input_Username' is visible
+
+2018-06-23 17:12:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/QA/Page_Login/input_Username' is cleared
+
+2018-06-23 17:12:23 - [MESSAGE][PASSED] - Keys 'autofpsadmin02@grr.la' sent to object: 'Object Repository/QA/Page_Login/input_Username'
+
+2018-06-23 17:12:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/QA/Page_Login/input_Password' is cleared
+
+2018-06-23 17:12:23 - [MESSAGE][PASSED] - Keys 'AppQa123' sent to object: 'Object Repository/QA/Page_Login/input_Password'
+
+2018-06-23 17:12:25 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/Page_Login/button_SignIn' is clicked on
+
+2018-06-23 17:12:25 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/button_Verify' is visible
+
+2018-06-23 17:12:28 - [MESSAGE][PASSED] - Send request successfully
+
+2018-06-23 17:12:31 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-23 17:12:31 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode' is visible
+
+2018-06-23 17:12:31 - [MESSAGE][PASSED] - Keys '91907814' sent to object: 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode'
+
+2018-06-23 17:12:39 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/button_Verify' is clicked on
+
+2018-06-23 17:12:39 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Landing/link_SignOut' is present
+
+2018-06-23 17:12:39 - [MESSAGE][PASSED] - browserHelper.Users.Login is PASSED
+
+2018-06-23 17:12:39 - [TEST_STEP][PASSED] - browserHelper.Navigation.NavigateToAccount: browserHelper.Navigation.NavigateToAccount is PASSED
+
+2018-06-23 17:12:44 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/loading_Mask' located by 'By.xpath: //div[contains(@class,'el-loading-mask')]' not found
+
+2018-06-23 17:12:44 - [MESSAGE][PASSED] - Navigate to 'https://institution-QA.clearbank.co.uk/#/institution/accounts/495eba7c-c071-4c9e-86ea-b51376c40e98' successfully
+
+2018-06-23 17:12:44 - [MESSAGE][PASSED] - browserHelper.Navigation.NavigateToAccount is PASSED
+
+2018-06-23 17:12:44 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is visible
+
+2018-06-23 17:12:47 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is visible
+
+2018-06-23 17:12:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is clicked on
+
+2018-06-23 17:12:48 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is clicked on
+
+2018-06-23 17:12:48 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-06-23 17:12:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-23 17:12:50 - [TEST_STEP][ERROR] - Statement - Try: element not visible
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\customer\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 5781521de3be0cb297cd62b34736383c
+
+2018-06-23 17:12:50 - [TEST_STEP][ERROR] - browserHelper.Payments.PreviousPaymentTemplateAction: element not visible
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\customer\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 5781521de3be0cb297cd62b34736383c
+
+2018-06-23 17:12:50 - [MESSAGE][ERROR] - element not visible
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\customer\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 5781521de3be0cb297cd62b34736383c
+
+2018-06-23 17:12:50 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): null
+
+2018-06-23 17:12:50 - [TEST_STEP][PASSED] - Statement - println(message): null
+
+2018-06-23 17:12:50 - [TEST_STEP][PASSED] - waitForElementNotVisible: Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-23 17:12:50 - [MESSAGE][PASSED] - Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-23 17:12:50 - [TEST_STEP][PASSED] - browserHelper.Dropdown.DropdownHelper: browserHelper.Dropdown.DropdownHelper is PASSED
+
+2018-06-23 17:12:53 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/dropdown_Card' located by 'By.xpath: ' not found
+
+2018-06-23 17:12:53 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is visible
+
+2018-06-23 17:12:53 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is clickable
+
+2018-06-23 17:12:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-23 17:12:55 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is clicked on
+
+2018-06-23 17:12:56 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-23 17:12:59 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/dropdown_Card' located by 'By.xpath: ' not found
+
+2018-06-23 17:12:59 - [MESSAGE][PASSED] - browserHelper.Dropdown.DropdownHelper is PASSED
+
+2018-06-23 17:12:59 - [TEST_STEP][PASSED] - browserHelper.Date.SetDate: browserHelper.Date.SetDate is PASSED
+
+2018-06-23 17:12:59 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/calendar_PaymentDate' is visible
+
+2018-06-23 17:13:01 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/calendar_PaymentDate' is clicked on
+
+2018-06-23 17:13:02 - [MESSAGE][PASSED] - browserHelper.Date.SetDate is PASSED
+
+2018-06-23 17:13:02 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-23 17:13:12 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser' located by 'By.xpath: //span[normalize-space()='Create User']' not found
+
+2018-06-23 17:13:14 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-23 17:13:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_ConfirmCreditors' is clicked on
+
+2018-06-23 17:13:14 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_ConfirmCreditors' is clicked on
+
+2018-06-23 17:13:14 - [TEST_STEP][PASSED] - waitForElementNotVisible: Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-23 17:13:17 - [MESSAGE][PASSED] - Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-23 17:13:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SubmitForApproval' is clicked on
+
+2018-06-23 17:13:17 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SubmitForApproval' is clicked on
+
+2018-06-23 17:13:17 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/QA/popup_Message' is visible
+
+2018-06-23 17:13:20 - [MESSAGE][PASSED] - Object 'Object Repository/QA/popup_Message' is visible
+
+2018-06-23 17:13:20 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/QA/popup_Message' are matched.
+
+2018-06-23 17:13:20 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/QA/popup_Message' are matched.]]></system-out>
+         <system-err><![CDATA[2018-06-23 17:12:06 - [TEST_CASE][ERROR] - Test Cases/Health checks/TC-44702: Test Cases/Health checks/TC-44702 FAILED because (of) org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\customer\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 5781521de3be0cb297cd62b34736383c]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-23 17:12:04 - [TEST_SUITE][ERROR] - payment01: Test Cases/Health checks/TC-44702 FAILED because (of) org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\customer\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 5781521de3be0cb297cd62b34736383c]]></system-out>
+      <system-err><![CDATA[2018-06-23 17:12:04 - [TEST_SUITE][ERROR] - payment01: Test Cases/Health checks/TC-44702 FAILED because (of) org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-563VRSA', ip: '192.168.0.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\customer\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 5781521de3be0cb297cd62b34736383c]]></system-err>
+   </testsuite>
+</testsuites>
