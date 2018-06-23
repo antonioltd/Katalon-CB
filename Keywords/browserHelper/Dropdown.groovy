@@ -65,6 +65,9 @@ public class Dropdown {
 				WebUI.click(dropdownObject)
 			}
 		} catch (Exception e) { }
+		
+		WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/dropdown_Card'), 3)
+		
 	}
 
 	@Keyword

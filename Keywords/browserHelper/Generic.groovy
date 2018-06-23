@@ -50,7 +50,7 @@ public class Generic {
 		WebElement element = null;
 
 		for (int i = 0; i < 5;  i++) {
-			
+
 			WebUI.delay(1)
 
 			List<WebElement> elements = driver.findElements(By.xpath("//div[contains(text(),'Users')]/ancestor::div[@class='el-card__header']/following::div/div//tr/td[1]/div"))

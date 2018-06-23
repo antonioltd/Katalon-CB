@@ -41,6 +41,8 @@ class Navigation {
 
 	@Keyword
 	public void NavigateToAccount(String accoundId){
+		
+		WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/loading_Mask'), 5);
 
 		WebUI.navigateToUrl("https://institution-" + GlobalVariable.environment + ".clearbank.co.uk/#/institution/accounts/" + accoundId)
 	}
@@ -52,8 +54,6 @@ class Navigation {
 
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='"+ sideMenu +"']")))
 		element.click()
-		
-		
 	}
 
 

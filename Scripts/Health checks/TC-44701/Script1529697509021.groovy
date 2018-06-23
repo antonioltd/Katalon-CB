@@ -35,3 +35,25 @@ WebUI.waitForElementNotVisible(findTestObject('QA/loading_Mask'), 10)
 CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/5. Page_Institution/Accounts/dropdown_PaymentMethod'), 
     'Faster Payments')
 
+CustomKeywords.'browserHelper.Date.SetDate'()
+
+WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountHolderName'), 'holder01')
+
+CustomKeywords.'browserHelper.Payments.SetSortCode'('200318')
+
+WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountNumber'), '12345679')
+
+WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Amount'), '20')
+
+WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Reference'), 'testreference')
+
+WebUI.click(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/button_ConfirmCreditors'))
+
+WebUI.waitForElementNotVisible(findTestObject('QA/loading_Mask'), 5)
+
+WebUI.click(findTestObject('QA/5. Page_Institution/Accounts/button_SubmitForApproval'))
+
+WebUI.waitForElementVisible(findTestObject('QA/popup_Message'), 5)
+
+WebUI.verifyElementText(findTestObject('QA/popup_Message'), 'Success')
+

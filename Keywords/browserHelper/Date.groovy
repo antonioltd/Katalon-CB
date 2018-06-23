@@ -33,25 +33,21 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
 public class Date {
-	
-		WebDriver driver = DriverFactory.getWebDriver()
-	    WebDriverWait wait = new WebDriverWait(driver, 15)
-	
-	
+
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebDriverWait wait = new WebDriverWait(driver, 15)
+
+
 	@Keyword
-	public void GetDate(String date){
-		
+	public void SetDate(String date = "Today"){
+
 		WebUI.waitForElementVisible(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/calendar_PaymentDate'), 5)
 		WebUI.click(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/calendar_PaymentDate'))
-		
+
 		if (date.equals("Today")) {
-			
+
 			WebElement today = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='available today current']")))
 			today.click()
 		}
-		
-		
-		
-		
 	}
 }
