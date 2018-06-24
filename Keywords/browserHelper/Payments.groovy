@@ -54,27 +54,27 @@ public class Payments {
 
 		return sortcode.substring(4,6)
 	}
-	
+
 	@Keyword
 	public void SetCreditorSortCode(int row, String sortcode){
 
 		WebElement SCLeft=null;
 		WebElement SCMiddle =null;
 		WebElement SCRight = null;
-		
-		
+
+
 		if (driver.findElement(By.xpath("//form[@class='el-form u-space--m']")).displayed) {
-			
+
 			SCLeft = driver.findElement(By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() +"]//div[@class='sort-code']/div[1]//input"));
 			SCMiddle = driver.findElement(By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() +"]//div//div[@class='sort-code']/div[2]//input"));
 			SCRight = driver.findElement(By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() +"]//div[@class='sort-code']/div[3]//input"));
 		}
-		
-		
+
+
 		SCLeft.sendKeys(GetLeftValues(sortcode))
-		
+
 		SCMiddle.sendKeys(GetMiddleValues(sortcode))
-		
+
 		SCRight.sendKeys(GetRightValues(sortcode))
 	}
 
@@ -110,73 +110,84 @@ public class Payments {
 	@Keyword
 	public void EnterPayment(int row = 1, String accountHolderName = "Holder", String sortcode="200318", String accountNumber="10000001", String amount = "5.00", String reference="Payment Reference"){
 
-		
-		
+
+
 		if (row > 1) {
-			
+
 			WebUI.click(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor'))
 		}
-		
-		
+
+
 		if (row%10 == 1 ) {
-			
-			WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser'), 10)
+
+			WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser'), 5)
 		}
-		
+
 		if (row > 10) {
-			
+
 			row = row%10
-			
+
 			if (row == 0) {
-				
+
 				row = 10;
 			}
 		}
-		
+
 		//Account Holder Name
 		By accountHolderTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Account Holder Name']");
 		WebElement accountHolderTextboxElement = driver.findElement(accountHolderTextbox)
 		accountHolderTextboxElement.sendKeys(accountHolderName)
-		
+
 		//Sort Code
 		SetCreditorSortCode(row, sortcode)
-		
+
 		//Account Number
 		By accountNumberTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Account Number']");
 		WebElement accountNumberTextboxElement = driver.findElement(accountNumberTextbox)
 		accountNumberTextboxElement.sendKeys(accountNumber)
-		
+
 		//Amount
 		By amountTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Amount']");
 		WebElement amountTextboxElement = driver.findElement(amountTextbox)
 		amountTextboxElement.sendKeys(amount)
-		
+
 		//Reference
 		By referenceTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Reference']");
 		WebElement referenceTextboxElement = driver.findElement(referenceTextbox)
 		referenceTextboxElement.sendKeys(reference)
-		
-		
-		
-//		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountHolderName'), accountHolderName)
-//
-//		
-//
-//		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_AccountNumber'), accountNumber)
-//
-//		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Amount'), amount)
-//
-//		WebUI.setText(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/input_Reference'), reference)
+
 	}
 
 	@Keyword
 	public void PreviousPaymentTemplateAction(String action){
-		//		WebElement discardElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Discard']/parent::button")))
-		//		discardElement.click()
-
-		By locator = By.xpath("//span[text()='" +  action + "']/parent::button");
-		WebElement element = driver.findElement(locator)
-		element.click()
+		
+		
+		WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/loading_Mask'), 5)
+		
+		By locator = null;
+		WebElement  ele = null;
+		
+		switch(action.toLowerCase()){
+			
+			case "close":
+				locator = By.xpath("//span[text()='Welcome Back']/following-sibling::button");
+			  break;
+			  
+			case "discard":
+				locator = By.xpath("//span[text()='" +  action + "']/parent::button");
+			  break;
+			  
+			case "resume":
+				locator = By.xpath("//span[text()='" +  action + "']/parent::button");
+			  break;
+		}
+		
+		
+		ele = driver.findElement(locator)
+		wait.until(ExpectedConditions.elementToBeClickable(ele))
+		
+		ele.click()		
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator))
+	
 	}
 }

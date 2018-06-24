@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+payment01,Chrome 67.0.3396.87,,2018-06-24 10:17:39,2018-06-24 10:18:23,44.215s,FAILED
+,,,,,,
+Test Cases/Health checks/TC-44702,Chrome 67.0.3396.87,,2018-06-24 10:17:40,2018-06-24 10:18:22,41.996s,FAILED
+openBrowser,Chrome 67.0.3396.87,,2018-06-24 10:17:42,2018-06-24 10:17:52,10.936s,PASSED
+browserHelper.Users.Login,Chrome 67.0.3396.87,,2018-06-24 10:17:52,2018-06-24 10:18:06,13.527s,PASSED
+browserHelper.Navigation.NavigateToAccount,Chrome 67.0.3396.87,,2018-06-24 10:18:06,2018-06-24 10:18:12,5.750s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-24 10:18:12,2018-06-24 10:18:16,3.901s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-24 10:18:16,2018-06-24 10:18:16,0.681s,PASSED
+Statement - If (displayed),Chrome 67.0.3396.87,,2018-06-24 10:18:16,2018-06-24 10:18:17,0.365s,PASSED
+browserHelper.Dropdown.DropdownHelper,Chrome 67.0.3396.87,,2018-06-24 10:18:17,2018-06-24 10:18:22,5.131s,FAILED

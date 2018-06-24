@@ -15,6 +15,7 @@ import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
@@ -32,18 +33,10 @@ WebUI.click(findTestObject('QA/5. Page_Institution/Accounts/button_SendPayments'
 
 WebUI.delay(2)
 
-
-	try {
-		
-		CustomKeywords.'browserHelper.Payments.PreviousPaymentTemplateAction'('Discard')
-		
-	} catch (Exception e) {
-	
-		println (e.message)
-	}
-
-
-WebUI.waitForElementNotVisible(findTestObject('QA/loading_Mask'), 10)
+if (WebUiCommonHelper.findWebElement(findTestObject('Object Repository/QA/5. Page_Institution/Accounts/popup_WelcomeBack'), 
+    3).displayed) {
+    CustomKeywords.'browserHelper.Payments.PreviousPaymentTemplateAction'('close')
+}
 
 CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/5. Page_Institution/Accounts/dropdown_PaymentMethod'), 
     'Faster Payments')
@@ -81,4 +74,6 @@ WebUI.click(findTestObject('QA/5. Page_Institution/Accounts/button_SubmitForAppr
 WebUI.waitForElementVisible(findTestObject('QA/popup_Message'), 5)
 
 WebUI.verifyElementText(findTestObject('QA/popup_Message'), 'Success')
+
+WebUI.closeBrowser()
 
