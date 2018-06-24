@@ -1,7 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-payment01,Chrome 67.0.3396.87,,2018-06-24 10:38:39,2018-06-24 10:39:09,29.420s,FAILED
-,,,,,,
-Test Cases/Health checks/TC-44702,Chrome 67.0.3396.87,,2018-06-24 10:38:41,2018-06-24 10:39:08,27.349s,FAILED
-openBrowser,Chrome 67.0.3396.87,,2018-06-24 10:38:42,2018-06-24 10:38:54,11.744s,PASSED
-browserHelper.Users.Login,Chrome 67.0.3396.87,,2018-06-24 10:38:54,2018-06-24 10:39:06,11.728s,PASSED
-browserHelper.Navigation.NavigateToAccount,Chrome 67.0.3396.87,,2018-06-24 10:39:06,2018-06-24 10:39:08,2.398s,FAILED
