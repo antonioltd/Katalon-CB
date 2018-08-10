@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+FPS Test suite,Chrome 67.0.3396.87,,2018-06-26 16:44:48,2018-06-26 16:46:17,1m - 29.050s,ERROR
+,,,,,,
+Test Cases/Health checks/TC-44702,Chrome 67.0.3396.87,,2018-06-26 16:44:48,2018-06-26 16:45:31,42.778s,PASSED
+openBrowser,Chrome 67.0.3396.87,,2018-06-26 16:44:49,2018-06-26 16:44:54,4.931s,PASSED
+browserHelper.Users.Login,Chrome 67.0.3396.87,,2018-06-26 16:44:54,2018-06-26 16:45:02,8.363s,PASSED
+browserHelper.Navigation.NavigateToAccount,Chrome 67.0.3396.87,,2018-06-26 16:45:02,2018-06-26 16:45:07,5.172s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-26 16:45:07,2018-06-26 16:45:09,1.635s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:45:09,2018-06-26 16:45:09,0.130s,PASSED
+delay,Chrome 67.0.3396.87,,2018-06-26 16:45:09,2018-06-26 16:45:11,2.012s,PASSED
+Statement - If (displayed),Chrome 67.0.3396.87,,2018-06-26 16:45:11,2018-06-26 16:45:11,0.045s,PASSED
+browserHelper.Dropdown.DropdownHelper,Chrome 67.0.3396.87,,2018-06-26 16:45:11,2018-06-26 16:45:19,8.393s,PASSED
+browserHelper.Date.SetDate,Chrome 67.0.3396.87,,2018-06-26 16:45:19,2018-06-26 16:45:20,1.087s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:45:20,2018-06-26 16:45:26,5.587s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:45:26,2018-06-26 16:45:26,0.071s,PASSED
+waitForElementNotVisible,Chrome 67.0.3396.87,,2018-06-26 16:45:26,2018-06-26 16:45:28,2.069s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:45:28,2018-06-26 16:45:28,0.061s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-26 16:45:28,2018-06-26 16:45:30,2.074s,PASSED
+verifyElementText,Chrome 67.0.3396.87,,2018-06-26 16:45:30,2018-06-26 16:45:30,0.036s,PASSED
+closeBrowser,Chrome 67.0.3396.87,,2018-06-26 16:45:30,2018-06-26 16:45:31,0.655s,PASSED
+,,,,,,
+Test Cases/Health checks/TC-44703,Chrome 67.0.3396.87,,2018-06-26 16:45:31,2018-06-26 16:46:16,45.261s,ERROR
+openBrowser,Chrome 67.0.3396.87,,2018-06-26 16:45:31,2018-06-26 16:45:34,3.081s,PASSED
+browserHelper.Users.Login,Chrome 67.0.3396.87,,2018-06-26 16:45:34,2018-06-26 16:45:42,7.145s,PASSED
+browserHelper.Navigation.NavigateToAccount,Chrome 67.0.3396.87,,2018-06-26 16:45:42,2018-06-26 16:45:47,5.127s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-26 16:45:47,2018-06-26 16:45:49,2.071s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:45:49,2018-06-26 16:45:49,0.113s,PASSED
+delay,Chrome 67.0.3396.87,,2018-06-26 16:45:49,2018-06-26 16:45:51,2.002s,PASSED
+Statement - If (displayed),Chrome 67.0.3396.87,,2018-06-26 16:45:51,2018-06-26 16:45:51,0.029s,PASSED
+browserHelper.Dropdown.DropdownHelper,Chrome 67.0.3396.87,,2018-06-26 16:45:51,2018-06-26 16:45:59,8.343s,PASSED
+browserHelper.Date.SetDate,Chrome 67.0.3396.87,,2018-06-26 16:45:59,2018-06-26 16:46:00,1.008s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:00,2018-06-26 16:46:06,5.642s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:06,2018-06-26 16:46:06,0.578s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:06,2018-06-26 16:46:07,0.558s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:07,2018-06-26 16:46:08,0.551s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:08,2018-06-26 16:46:08,0.534s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:08,2018-06-26 16:46:09,0.583s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:09,2018-06-26 16:46:09,0.658s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:09,2018-06-26 16:46:10,0.574s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:10,2018-06-26 16:46:10,0.601s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:10,2018-06-26 16:46:11,0.609s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:11,2018-06-26 16:46:16,5.196s,ERROR

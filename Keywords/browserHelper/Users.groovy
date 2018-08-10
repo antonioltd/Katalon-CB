@@ -26,9 +26,9 @@ class Users {
 
 	TestData environmentData = findTestData('Data Files/Environment')
 	TestData usersData;
-	
-	
-	
+
+
+
 
 	@Keyword
 	public String GetUrl(){
@@ -59,6 +59,34 @@ class Users {
 			}
 		}
 	}
+
+
+	@Keyword
+	public String Get4thUser(String institution){
+
+		usersData = findTestData('Data Files/'+GlobalVariable.environment);
+
+		for(int i=1; i<=usersData.getRowNumbers(); i++){
+			if (usersData.getValue("Bank name", i).equalsIgnoreCase(institution)) {
+				return usersData.getValue("User4", i)
+			}
+		}
+	}
+
+
+	@Keyword
+	public String Get4thPassword(String institution){
+
+		//		usersData = findTestData('Data Files/'+GlobalVariable.environment+' Data');
+		usersData = findTestData('Data Files/'+GlobalVariable.environment)
+
+		for(int i=1; i<=usersData.getRowNumbers(); i++){
+			if (usersData.getValue("Bank name", i).equalsIgnoreCase(institution)) {
+				return usersData.getValue("Password4", i)
+			}
+		}
+	}
+
 
 	@Keyword
 	public String GetUser1Password(String institution){
@@ -102,6 +130,10 @@ class Users {
 				password = GetUser2Password(inst)
 				break;
 
+			case "4th":
+				username = Get4thUser(inst)
+				password = Get4thPassword(inst)
+				break;
 			default:
 				username = GetUser1(inst)
 				password = GetUser1Password(inst)

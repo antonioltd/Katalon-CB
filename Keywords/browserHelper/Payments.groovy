@@ -149,6 +149,7 @@ public class Payments {
 		//Amount
 		By amountTextbox = By.xpath("//form[@class='el-form u-space--m']/div[" + row.toString() + "]//input[@placeholder='Amount']");
 		WebElement amountTextboxElement = driver.findElement(amountTextbox)
+		amountTextboxElement.clear()
 		amountTextboxElement.sendKeys(amount)
 
 		//Reference
@@ -160,34 +161,33 @@ public class Payments {
 
 	@Keyword
 	public void PreviousPaymentTemplateAction(String action){
-		
-		
+
+
 		WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/loading_Mask'), 5)
-		
+
 		By locator = null;
 		WebElement  ele = null;
-		
+
 		switch(action.toLowerCase()){
-			
+
 			case "close":
 				locator = By.xpath("//span[text()='Welcome Back']/following-sibling::button");
-			  break;
-			  
+				break;
+
 			case "discard":
 				locator = By.xpath("//span[text()='" +  action + "']/parent::button");
-			  break;
-			  
+				break;
+
 			case "resume":
 				locator = By.xpath("//span[text()='" +  action + "']/parent::button");
-			  break;
+				break;
 		}
-		
-		
+
+
 		ele = driver.findElement(locator)
 		wait.until(ExpectedConditions.elementToBeClickable(ele))
-		
-		ele.click()		
+
+		ele.click()
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator))
-	
 	}
 }

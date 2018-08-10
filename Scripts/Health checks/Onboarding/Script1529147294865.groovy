@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 //change01
 WebUI.openBrowser(findTestData('Environment').getValue(GlobalVariable.environment, 1))
 
-CustomKeywords.'browserHelper.Users.Login'('CB', 'primary')
+CustomKeywords.'browserHelper.Users.Login'('CB', 'secondary')
 
 CustomKeywords.'browserHelper.Navigation.NavigateToOnboardingPage'()
 

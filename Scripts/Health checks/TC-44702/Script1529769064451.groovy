@@ -23,7 +23,7 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.openBrowser(findTestData('Environment').getValue(GlobalVariable.environment, 1))
 
 //CustomKeywords.'browserHelper.Users.Login'('Auto FPS', 'primary')
-CustomKeywords.'browserHelper.Users.Login'('Auto FPS', 'secondary')
+CustomKeywords.'browserHelper.Users.Login'('AutoFPS01', 'primary')
 
 CustomKeywords.'browserHelper.Navigation.NavigateToAccount'('495eba7c-c071-4c9e-86ea-b51376c40e98')
 
@@ -38,8 +38,6 @@ if (WebUiCommonHelper.findWebElement(findTestObject('Object Repository/QA/5. Pag
     CustomKeywords.'browserHelper.Payments.PreviousPaymentTemplateAction'('close')
 }
 
-	
-	
 CustomKeywords.'browserHelper.Dropdown.DropdownHelper'(findTestObject('QA/5. Page_Institution/Accounts/dropdown_PaymentMethod'), 
     'Faster Payments')
 

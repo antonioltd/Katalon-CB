@@ -1,0 +1,48 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+CHAPS Test suite,Chrome 67.0.3396.87,,2018-06-26 16:44:48,2018-06-26 16:46:22,1m - 34.440s,PASSED
+,,,,,,
+Test Cases/Health checks/TC-44700,Chrome 67.0.3396.87,,2018-06-26 16:44:48,2018-06-26 16:45:31,42.929s,PASSED
+openBrowser,Chrome 67.0.3396.87,,2018-06-26 16:44:48,2018-06-26 16:44:54,5.152s,PASSED
+browserHelper.Users.Login,Chrome 67.0.3396.87,,2018-06-26 16:44:54,2018-06-26 16:45:01,7.129s,PASSED
+browserHelper.Navigation.NavigateToAccount,Chrome 67.0.3396.87,,2018-06-26 16:45:01,2018-06-26 16:45:06,5.179s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-26 16:45:06,2018-06-26 16:45:07,1.566s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:45:07,2018-06-26 16:45:08,0.131s,PASSED
+delay,Chrome 67.0.3396.87,,2018-06-26 16:45:08,2018-06-26 16:45:10,2.016s,PASSED
+Statement - If (displayed),Chrome 67.0.3396.87,,2018-06-26 16:45:10,2018-06-26 16:45:10,0.737s,PASSED
+browserHelper.Dropdown.DropdownHelper,Chrome 67.0.3396.87,,2018-06-26 16:45:10,2018-06-26 16:45:19,8.382s,PASSED
+browserHelper.Date.SetDate,Chrome 67.0.3396.87,,2018-06-26 16:45:19,2018-06-26 16:45:20,1.033s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:45:20,2018-06-26 16:45:25,5.610s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:45:25,2018-06-26 16:45:25,0.075s,PASSED
+waitForElementNotVisible,Chrome 67.0.3396.87,,2018-06-26 16:45:25,2018-06-26 16:45:27,1.560s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:45:27,2018-06-26 16:45:27,0.073s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-26 16:45:27,2018-06-26 16:45:30,3.113s,PASSED
+verifyElementText,Chrome 67.0.3396.87,,2018-06-26 16:45:30,2018-06-26 16:45:30,0.050s,PASSED
+closeBrowser,Chrome 67.0.3396.87,,2018-06-26 16:45:30,2018-06-26 16:45:31,0.661s,PASSED
+,,,,,,
+Test Cases/Health checks/TC-44701,Chrome 67.0.3396.87,,2018-06-26 16:45:31,2018-06-26 16:46:22,51.189s,PASSED
+openBrowser,Chrome 67.0.3396.87,,2018-06-26 16:45:31,2018-06-26 16:45:34,2.919s,PASSED
+browserHelper.Users.Login,Chrome 67.0.3396.87,,2018-06-26 16:45:34,2018-06-26 16:45:39,5.401s,PASSED
+browserHelper.Navigation.NavigateToAccount,Chrome 67.0.3396.87,,2018-06-26 16:45:39,2018-06-26 16:45:45,5.138s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-26 16:45:45,2018-06-26 16:45:46,1.562s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:45:46,2018-06-26 16:45:46,0.128s,PASSED
+delay,Chrome 67.0.3396.87,,2018-06-26 16:45:46,2018-06-26 16:45:48,2.000s,PASSED
+Statement - If (displayed),Chrome 67.0.3396.87,,2018-06-26 16:45:48,2018-06-26 16:45:48,0.034s,PASSED
+browserHelper.Dropdown.DropdownHelper,Chrome 67.0.3396.87,,2018-06-26 16:45:48,2018-06-26 16:45:57,8.358s,PASSED
+browserHelper.Date.SetDate,Chrome 67.0.3396.87,,2018-06-26 16:45:57,2018-06-26 16:45:58,0.983s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:45:58,2018-06-26 16:46:03,5.592s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:03,2018-06-26 16:46:04,0.558s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:04,2018-06-26 16:46:04,0.537s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:04,2018-06-26 16:46:05,0.516s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:05,2018-06-26 16:46:05,0.575s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:05,2018-06-26 16:46:06,0.659s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:06,2018-06-26 16:46:07,0.596s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:07,2018-06-26 16:46:07,0.590s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:07,2018-06-26 16:46:08,0.586s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:08,2018-06-26 16:46:08,0.599s,PASSED
+browserHelper.Payments.EnterPayment,Chrome 67.0.3396.87,,2018-06-26 16:46:08,2018-06-26 16:46:14,5.600s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:46:14,2018-06-26 16:46:14,0.065s,PASSED
+waitForElementNotVisible,Chrome 67.0.3396.87,,2018-06-26 16:46:14,2018-06-26 16:46:16,2.098s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-26 16:46:16,2018-06-26 16:46:16,0.066s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-26 16:46:16,2018-06-26 16:46:21,5.096s,PASSED
+verifyElementText,Chrome 67.0.3396.87,,2018-06-26 16:46:21,2018-06-26 16:46:21,0.033s,PASSED
+closeBrowser,Chrome 67.0.3396.87,,2018-06-26 16:46:21,2018-06-26 16:46:22,0.643s,PASSED

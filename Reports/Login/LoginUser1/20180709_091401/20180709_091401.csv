@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+LoginUser1,Chrome 67.0.3396.99,,2018-07-09 09:14:08,2018-07-09 09:14:23,15.582s,PASSED
+,,,,,,
+Test Cases/LoginUser1,Chrome 67.0.3396.99,,2018-07-09 09:14:08,2018-07-09 09:14:23,14.608s,PASSED
+openBrowser,Chrome 67.0.3396.99,,2018-07-09 09:14:08,2018-07-09 09:14:14,5.439s,PASSED
+browserHelper.Users.Login,Chrome 67.0.3396.99,,2018-07-09 09:14:14,2018-07-09 09:14:23,8.781s,PASSED

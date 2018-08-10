@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CHAPS Test suite" time="94" tests="2" failures="0" errors="0">
+   <testsuite name="CHAPS Test suite" tests="2" failures="0" errors="0" time="94" timestamp="2018-06-26 16:44:48" hostname="Timmy.Antonio - AntonioPC" id="Test Suites/CHAPS Test suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\TimmyAntonio\\QA\\Katalon-CB\\Reports\\CHAPS Test suite\\20180626_164442"/>
+         <property name="logFiles" value="C:\\Users\\TimmyAntonio\\QA\\Katalon-CB\\Reports\\CHAPS Test suite\\20180626_164442\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Timmy.Antonio - AntonioPC"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.87"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="98f13a2417ba3d1660a1825ae124fd34"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Health checks/TC-44700" classname="Test Cases/Health checks/TC-44700" status="PASSED">
+         <system-out><![CDATA[2018-06-26 16:44:48 - [TEST_CASE][PASSED] - Test Cases/Health checks/TC-44700: Test Cases/Health checks/TC-44700
+
+2018-06-26 16:44:48 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://institution-qa.clearbank.co.uk/'
+
+2018-06-26 16:44:54 - [MESSAGE][PASSED] - Browser is opened with url: 'https://institution-qa.clearbank.co.uk/'
+
+2018-06-26 16:44:54 - [TEST_STEP][PASSED] - browserHelper.Users.Login: browserHelper.Users.Login is PASSED
+
+2018-06-26 16:44:54 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/QA/Page_Landing/link_UseAnotherAccount' located by 'By.xpath: //*[@id = 'use_another_account']' is not present after '5' second(s)
+
+2018-06-26 16:44:54 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/input_Username' is visible
+
+2018-06-26 16:44:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/QA/Page_Login/input_Username' is cleared
+
+2018-06-26 16:44:54 - [MESSAGE][PASSED] - Keys 'User1CHAPS01@grr.la' sent to object: 'Object Repository/QA/Page_Login/input_Username'
+
+2018-06-26 16:44:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/QA/Page_Login/input_Password' is cleared
+
+2018-06-26 16:44:54 - [MESSAGE][PASSED] - Keys 'AppQa123' sent to object: 'Object Repository/QA/Page_Login/input_Password'
+
+2018-06-26 16:44:55 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/Page_Login/button_SignIn' is clicked on
+
+2018-06-26 16:44:55 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/button_Verify' is visible
+
+2018-06-26 16:44:58 - [MESSAGE][PASSED] - Send request successfully
+
+2018-06-26 16:44:59 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-26 16:44:59 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode' is visible
+
+2018-06-26 16:44:59 - [MESSAGE][PASSED] - Keys '26417814' sent to object: 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode'
+
+2018-06-26 16:45:01 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/button_Verify' is clicked on
+
+2018-06-26 16:45:01 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Landing/link_SignOut' is present
+
+2018-06-26 16:45:01 - [MESSAGE][PASSED] - browserHelper.Users.Login is PASSED
+
+2018-06-26 16:45:01 - [TEST_STEP][PASSED] - browserHelper.Navigation.NavigateToAccount: browserHelper.Navigation.NavigateToAccount is PASSED
+
+2018-06-26 16:45:06 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/loading_Mask' located by 'By.xpath: //div[contains(@class,'el-loading-mask')]' not found
+
+2018-06-26 16:45:06 - [MESSAGE][PASSED] - Navigate to 'https://institution-QA.clearbank.co.uk/#/institution/accounts/521087b1-986d-468d-b8a6-223a94e406a8' successfully
+
+2018-06-26 16:45:06 - [MESSAGE][PASSED] - browserHelper.Navigation.NavigateToAccount is PASSED
+
+2018-06-26 16:45:06 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is visible
+
+2018-06-26 16:45:07 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is visible
+
+2018-06-26 16:45:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is clicked on
+
+2018-06-26 16:45:08 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is clicked on
+
+2018-06-26 16:45:08 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-06-26 16:45:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-26 16:45:10 - [TEST_STEP][PASSED] - Statement - If (displayed): browserHelper.Payments.PreviousPaymentTemplateAction is PASSED
+
+2018-06-26 16:45:10 - [TEST_STEP][PASSED] - browserHelper.Payments.PreviousPaymentTemplateAction: browserHelper.Payments.PreviousPaymentTemplateAction is PASSED
+
+2018-06-26 16:45:10 - [MESSAGE][PASSED] - Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-26 16:45:10 - [MESSAGE][PASSED] - browserHelper.Payments.PreviousPaymentTemplateAction is PASSED
+
+2018-06-26 16:45:10 - [TEST_STEP][PASSED] - browserHelper.Dropdown.DropdownHelper: browserHelper.Dropdown.DropdownHelper is PASSED
+
+2018-06-26 16:45:13 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/dropdown_Card' located by 'By.xpath: ' not found
+
+2018-06-26 16:45:13 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is visible
+
+2018-06-26 16:45:13 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is clickable
+
+2018-06-26 16:45:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-26 16:45:14 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is clicked on
+
+2018-06-26 16:45:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-26 16:45:19 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/dropdown_Card' located by 'By.xpath: ' not found
+
+2018-06-26 16:45:19 - [MESSAGE][PASSED] - browserHelper.Dropdown.DropdownHelper is PASSED
+
+2018-06-26 16:45:19 - [TEST_STEP][PASSED] - browserHelper.Date.SetDate: browserHelper.Date.SetDate is PASSED
+
+2018-06-26 16:45:19 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/calendar_PaymentDate' is visible
+
+2018-06-26 16:45:19 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/calendar_PaymentDate' is clicked on
+
+2018-06-26 16:45:20 - [MESSAGE][PASSED] - browserHelper.Date.SetDate is PASSED
+
+2018-06-26 16:45:20 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:45:25 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser' located by 'By.xpath: //span[normalize-space()='Create User']' not found
+
+2018-06-26 16:45:25 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:45:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_ConfirmCreditors' is clicked on
+
+2018-06-26 16:45:25 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_ConfirmCreditors' is clicked on
+
+2018-06-26 16:45:25 - [TEST_STEP][PASSED] - waitForElementNotVisible: Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-26 16:45:27 - [MESSAGE][PASSED] - Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-26 16:45:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SubmitForApproval' is clicked on
+
+2018-06-26 16:45:27 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SubmitForApproval' is clicked on
+
+2018-06-26 16:45:27 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/QA/popup_Message' is visible
+
+2018-06-26 16:45:30 - [MESSAGE][PASSED] - Object 'Object Repository/QA/popup_Message' is visible
+
+2018-06-26 16:45:30 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/QA/popup_Message' are matched.
+
+2018-06-26 16:45:30 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/QA/popup_Message' are matched.
+
+2018-06-26 16:45:30 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-26 16:45:31 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Health checks/TC-44701" classname="Test Cases/Health checks/TC-44701" status="PASSED">
+         <system-out><![CDATA[2018-06-26 16:45:31 - [TEST_CASE][PASSED] - Test Cases/Health checks/TC-44701: Test Cases/Health checks/TC-44701
+
+2018-06-26 16:45:31 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://institution-qa.clearbank.co.uk/'
+
+2018-06-26 16:45:34 - [MESSAGE][PASSED] - Browser is opened with url: 'https://institution-qa.clearbank.co.uk/'
+
+2018-06-26 16:45:34 - [TEST_STEP][PASSED] - browserHelper.Users.Login: browserHelper.Users.Login is PASSED
+
+2018-06-26 16:45:34 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/QA/Page_Landing/link_UseAnotherAccount' located by 'By.xpath: //*[@id = 'use_another_account']' is not present after '5' second(s)
+
+2018-06-26 16:45:34 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/input_Username' is visible
+
+2018-06-26 16:45:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/QA/Page_Login/input_Username' is cleared
+
+2018-06-26 16:45:34 - [MESSAGE][PASSED] - Keys 'User2CHAPS01@grr.la' sent to object: 'Object Repository/QA/Page_Login/input_Username'
+
+2018-06-26 16:45:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/QA/Page_Login/input_Password' is cleared
+
+2018-06-26 16:45:34 - [MESSAGE][PASSED] - Keys 'AppQa123' sent to object: 'Object Repository/QA/Page_Login/input_Password'
+
+2018-06-26 16:45:36 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/Page_Login/button_SignIn' is clicked on
+
+2018-06-26 16:45:36 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/button_Verify' is visible
+
+2018-06-26 16:45:36 - [MESSAGE][PASSED] - Send request successfully
+
+2018-06-26 16:45:38 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-26 16:45:38 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode' is visible
+
+2018-06-26 16:45:38 - [MESSAGE][PASSED] - Keys '56641114' sent to object: 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode'
+
+2018-06-26 16:45:39 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/button_Verify' is clicked on
+
+2018-06-26 16:45:39 - [MESSAGE][PASSED] - Object 'Object Repository/QA/Page_Landing/link_SignOut' is present
+
+2018-06-26 16:45:39 - [MESSAGE][PASSED] - browserHelper.Users.Login is PASSED
+
+2018-06-26 16:45:39 - [TEST_STEP][PASSED] - browserHelper.Navigation.NavigateToAccount: browserHelper.Navigation.NavigateToAccount is PASSED
+
+2018-06-26 16:45:45 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/loading_Mask' located by 'By.xpath: //div[contains(@class,'el-loading-mask')]' not found
+
+2018-06-26 16:45:45 - [MESSAGE][PASSED] - Navigate to 'https://institution-QA.clearbank.co.uk/#/institution/accounts/521087b1-986d-468d-b8a6-223a94e406a8' successfully
+
+2018-06-26 16:45:45 - [MESSAGE][PASSED] - browserHelper.Navigation.NavigateToAccount is PASSED
+
+2018-06-26 16:45:45 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is visible
+
+2018-06-26 16:45:46 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is visible
+
+2018-06-26 16:45:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is clicked on
+
+2018-06-26 16:45:46 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SendPayments' is clicked on
+
+2018-06-26 16:45:46 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-06-26 16:45:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-26 16:45:48 - [TEST_STEP][PASSED] - Statement - If (displayed): Found 1 web elements with id: 'Object Repository/QA/5. Page_Institution/Accounts/popup_WelcomeBack' located by 'By.xpath: //span[text()='Welcome Back']' in '3' second(s)
+
+2018-06-26 16:45:48 - [TEST_STEP][PASSED] - browserHelper.Dropdown.DropdownHelper: browserHelper.Dropdown.DropdownHelper is PASSED
+
+2018-06-26 16:45:51 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/dropdown_Card' located by 'By.xpath: ' not found
+
+2018-06-26 16:45:51 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is visible
+
+2018-06-26 16:45:51 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is clickable
+
+2018-06-26 16:45:52 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-26 16:45:52 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/dropdown_PaymentMethod' is clicked on
+
+2018-06-26 16:45:53 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-26 16:45:57 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/dropdown_Card' located by 'By.xpath: ' not found
+
+2018-06-26 16:45:57 - [MESSAGE][PASSED] - browserHelper.Dropdown.DropdownHelper is PASSED
+
+2018-06-26 16:45:57 - [TEST_STEP][PASSED] - browserHelper.Date.SetDate: browserHelper.Date.SetDate is PASSED
+
+2018-06-26 16:45:57 - [MESSAGE][PASSED] - Object 'Object Repository/QA/5. Page_Institution/Accounts/calendar_PaymentDate' is visible
+
+2018-06-26 16:45:57 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/calendar_PaymentDate' is clicked on
+
+2018-06-26 16:45:58 - [MESSAGE][PASSED] - browserHelper.Date.SetDate is PASSED
+
+2018-06-26 16:45:58 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:03 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser' located by 'By.xpath: //span[normalize-space()='Create User']' not found
+
+2018-06-26 16:46:03 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:03 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:03 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:04 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:04 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:04 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:04 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:04 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:04 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:05 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:05 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:05 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:05 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:05 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:05 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:06 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:06 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:06 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:07 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:07 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:07 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:07 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:07 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:07 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:08 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:08 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:08 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:08 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:08 - [TEST_STEP][PASSED] - browserHelper.Payments.EnterPayment: browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:08 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_AddCreditor' is clicked on
+
+2018-06-26 16:46:14 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/5. Page_Institution/Page_Users/button_CreateUser' located by 'By.xpath: //span[normalize-space()='Create User']' not found
+
+2018-06-26 16:46:14 - [MESSAGE][PASSED] - browserHelper.Payments.EnterPayment is PASSED
+
+2018-06-26 16:46:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_ConfirmCreditors' is clicked on
+
+2018-06-26 16:46:14 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_ConfirmCreditors' is clicked on
+
+2018-06-26 16:46:14 - [TEST_STEP][PASSED] - waitForElementNotVisible: Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-26 16:46:16 - [MESSAGE][PASSED] - Object 'Object Repository/QA/loading_Mask' is NOT visible
+
+2018-06-26 16:46:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SubmitForApproval' is clicked on
+
+2018-06-26 16:46:16 - [MESSAGE][PASSED] - Object: 'Object Repository/QA/5. Page_Institution/Accounts/button_SubmitForApproval' is clicked on
+
+2018-06-26 16:46:16 - [TEST_STEP][PASSED] - waitForElementVisible: Web element with id: 'Object Repository/QA/popup_Message' located by 'By.xpath: //div[@class ='el-notification__group is-with-icon']/h2' not found
+
+2018-06-26 16:46:21 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/QA/popup_Message' located by 'By.xpath: //div[@class ='el-notification__group is-with-icon']/h2' not found
+
+2018-06-26 16:46:21 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/QA/popup_Message' are matched.
+
+2018-06-26 16:46:21 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/QA/popup_Message' are matched.
+
+2018-06-26 16:46:21 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-26 16:46:22 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-26 16:44:48 - [TEST_SUITE][PASSED] - CHAPS Test suite: Test Cases/Health checks/TC-44701]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
