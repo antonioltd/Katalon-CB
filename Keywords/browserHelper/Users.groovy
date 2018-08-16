@@ -164,22 +164,29 @@ class Users {
 
 		WebUI.click(findTestObject('QA/Page_Login/button_SignIn'))
 
-		WebUI.verifyElementVisible(findTestObject('QA/Page_Login/Page_TwoFactorAuthencation/button_Verify'))
+
 
 		//String code = CustomKeywords.'browserHelper.TOTP.getCode'(findTestData(GlobalVariable.environment).getValue('User1', 1), findTestData(GlobalVariable.environment).getValue('Password1',1))
 
-		def code =getCode(username, password)
+		if (!GlobalVariable.TOTP.equals(false)) {
 
-		WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
+			WebUI.verifyElementVisible(findTestObject('QA/Page_Login/Page_TwoFactorAuthencation/button_Verify'))
 
-		WebUI.waitForElementVisible(findTestObject('Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode'),
-				5)
+			def code =getCode(username, password)
 
-		WebUI.sendKeys(findTestObject('Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode'), code)
+			WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
 
-		WebUI.click(findTestObject('Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/button_Verify'))
+			WebUI.waitForElementVisible(findTestObject('Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode'),
+					5)
 
-		WebUI.verifyElementPresent(findTestObject('Object Repository/QA/Page_Landing/link_SignOut'), 5)
+			WebUI.sendKeys(findTestObject('Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/input_AuthenticationCode'), code)
+
+			WebUI.click(findTestObject('Object Repository/QA/Page_Login/Page_TwoFactorAuthencation/button_Verify'))
+
+			WebUI.verifyElementPresent(findTestObject('Object Repository/QA/Page_Landing/link_SignOut'), 5)
+
+		}
+		WebUI.maximizeWindow()
 
 	}
 

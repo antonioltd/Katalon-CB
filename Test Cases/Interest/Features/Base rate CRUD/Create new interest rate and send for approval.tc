@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create new interest rate and send for approval</name>
+   <tag>Interest</tag>
+   <comment></comment>
+   <testCaseGuid>2de5aa01-b8d4-4ac3-a47a-df6137fae5fd</testCaseGuid>
+</TestCaseEntity>

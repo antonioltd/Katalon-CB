@@ -9,4 +9,9 @@
       <initValue>'UAT'</initValue>
       <name>environment</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>true</initValue>
+      <name>TOTP</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

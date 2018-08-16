@@ -41,7 +41,7 @@ class Navigation {
 
 	@Keyword
 	public void NavigateToAccount(String accoundId){
-		
+
 		WebUI.waitForElementNotVisible(findTestObject('Object Repository/QA/loading_Mask'), 5);
 
 		WebUI.navigateToUrl("https://institution-" + GlobalVariable.environment + ".clearbank.co.uk/#/institution/accounts/" + accoundId)
@@ -76,12 +76,34 @@ class Navigation {
 		}
 
 	}
-
+	
+	@Keyword
+	public void NavigateToInterestProductManagementPage(){
+		
+		
+		SelectSideMenu("Treasury Management")
+		
+		WebUI.waitForElementVisible(findTestObject('Object Repository/QA/Page_TreasuryManagement/link_InterestProductManagement'), 5)
+		WebUI.waitForElementClickable(findTestObject('Object Repository/QA/Page_TreasuryManagement/link_InterestProductManagement'), 5)
+		WebUI.click(findTestObject('Object Repository/QA/Page_TreasuryManagement/link_InterestProductManagement'))
+		
+	
+	}
+	@Keyword
+	public void NavigateToInterestRateManagementPage(){
+		
+		
+		SelectSideMenu("Treasury Management")
+		
+		WebUI.waitForElementVisible(findTestObject('Object Repository/QA/Page_TreasuryManagement/link_InterestRateManagement'), 5)
+		WebUI.waitForElementClickable(findTestObject('Object Repository/QA/Page_TreasuryManagement/link_InterestRateManagement'), 5)
+		WebUI.click(findTestObject('Object Repository/QA/Page_TreasuryManagement/link_InterestRateManagement'))
+		
+	}
+	
 	@Keyword
 	public void NavigateToTreasuryDashboard(){
-
-
-
+		
 		SelectSideMenu("Treasury")
 
 		WebUI.waitForElementVisible(findTestObject('QA/2. Page_Treasury/link_TreasuryDashboard'), 5)
